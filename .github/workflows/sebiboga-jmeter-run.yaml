@@ -29,7 +29,6 @@ jobs:
       - name: install jmeter
         run: |
           java -version
-#           wget https://downloads.apache.org/jmeter/binaries/apache-jmeter-5.5.zip
           curl https://downloads.apache.org/jmeter/binaries/apache-jmeter-5.5.zip -O -J -L
           unzip apache-jmeter-5.5.zip
           cd apache-jmeter-5.5/bin
@@ -50,3 +49,8 @@ jobs:
         #  for i in $( ls $GITHUB_WORKSPACE/*.jmx); do
         #     ./jmeter -n -t $i;
         #  done
+
+
+
+
+#           wget https://downloads.apache.org/jmeter/binaries/apache-jmeter-5.5.zip
