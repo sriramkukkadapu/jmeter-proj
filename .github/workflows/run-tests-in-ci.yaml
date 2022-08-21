@@ -1,14 +1,14 @@
 name: CI
 
 on: 
-#  schedule:
-#    - cron: '0 0 * * *'
+ schedule:
+   - cron: '0 0 * * *'
 
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "disable" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "disable" ]
+    branches: [ "master" ]
     
 jobs:
   build:
@@ -26,7 +26,8 @@ jobs:
 
         - name: Test
           run: |
-              sh jmeter -n -t "./tests//Regular expressions.jmx"  -l "./Results-csv/results.csv" -e -o "./Reports" 
+              ./apache-jmeter-5.5/bin/jmeter -v
+              sh ./apache-jmeter-5.5/bin/jmeter -n -t "./tests/Regular expressions.jmx"  -l "./Results-csv/results.csv" -e -o "./Reports" 
 #              npm test
 
         - name: Upload report artifact
