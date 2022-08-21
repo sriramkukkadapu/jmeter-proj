@@ -29,21 +29,21 @@ jobs:
       - name: install jmeter
         run: |
           java -version
-          wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.4.1.zip
-          unzip apache-jmeter-5.4.1.zip
-          cd apache-jmeter-5.4.1/bin
+          wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.5.zip
+          unzip apache-jmeter-5.5.zip
+          cd apache-jmeter-5.5/bin
           ./jmeter -v
           pwd
           
       - name: install plugins
         run: |
-          cd $GITHUB_WORKSPACE/apache-jmeter-5.4.1
+          cd $GITHUB_WORKSPACE/apache-jmeter-5.5
           wget -q --no-check-certificate https://jmeter-plugins.org/files/packages/jpgc-dummy-0.4.zip  -P .
           unzip -o jpgc-dummy-0.4.zip  && rm jpgc-dummy-0.4.zip
           
       - name: run jmx scripts
         run: |
-         sh jmeter -n -t "./tests//Regular expressions.jmx"  -l "./Results-csv/results.csv" -e -o "./Reports" 
+         sh $GITHUB_WORKSPACE/apache-jmeter-5.5/jmeter -n -t "./tests//Regular expressions.jmx"  -l "./Results-csv/results.csv" -e -o "./Reports" 
 
         #  cd $GITHUB_WORKSPACE/apache-jmeter-5.4.1/bin
         #  for i in $( ls $GITHUB_WORKSPACE/*.jmx); do
