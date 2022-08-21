@@ -21,6 +21,7 @@ jobs:
           uses: QAInsights/PerfAction@2.0
           with:
             test-plan-path: './tests//Regular expressions.jmx'
+            args: ""
 
         - name: Upload Results
           uses: actions/upload-artifact@v2
