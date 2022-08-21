@@ -1,0 +1,76 @@
+line 18 column 9 - Warning: meta lacks "content" attribute
+line 30 column 9 - Warning: <script> lacks "type" attribute
+line 41 column 1 - Warning: <script> attribute "id" has invalid value "_waunkf"
+line 41 column 1 - Warning: <script> lacks "type" attribute
+line 50 column 1 - Warning: unknown attribute "crossorigin"
+line 143 column 1 - Warning: unknown attribute "role"
+line 156 column 21 - Warning: trimming empty <div>
+line 168 column 9 - Error: <header> is not recognized!
+line 168 column 9 - Warning: discarding unexpected <header>
+line 185 column 17 - Error: <nav> is not recognized!
+line 185 column 17 - Warning: discarding unexpected <nav>
+line 232 column 49 - Warning: unknown attribute "role"
+line 233 column 17 - Warning: unknown attribute "placeholder"
+line 239 column 13 - Warning: discarding unexpected </nav>
+line 245 column 5 - Warning: discarding unexpected </header>
+line 251 column 40 - Warning: trimming empty <div>
+line 260 column 25 - Warning: unknown attribute "role"
+line 309 column 1 - Warning: <button> joining values of repeated attribute "style"
+line 312 column 1 - Warning: unknown attribute "ondragstart"
+line 312 column 1 - Warning: unknown attribute "draggable"
+line 312 column 1 - Warning: <button> joining values of repeated attribute "style"
+line 312 column 133 - Warning: replacing element </p> by <br>
+line 312 column 133 - Warning: inserting implicit <br>
+line 316 column 2 - Warning: unknown attribute "ondragover"
+line 316 column 2 - Warning: unknown attribute "ondrop"
+line 316 column 2 - Warning: <button> joining values of repeated attribute "style"
+line 316 column 141 - Warning: replacing element </p> by <br>
+line 316 column 141 - Warning: inserting implicit <br>
+line 319 column 1 - Warning: <script> lacks "type" attribute
+line 340 column 1 - Warning: <script> lacks "type" attribute
+line 345 column 1 - Warning: <script> lacks "type" attribute
+line 349 column 1 - Warning: <script> lacks "type" attribute
+line 364 column 1 - Warning: <script> lacks "type" attribute
+line 366 column 1 - Warning: <script> lacks "type" attribute
+line 368 column 1 - Warning: <script> lacks "type" attribute
+line 370 column 1 - Warning: <script> lacks "type" attribute
+line 372 column 1 - Warning: <script> lacks "type" attribute
+line 374 column 1 - Warning: <script> lacks "type" attribute
+line 391 column 1 - Warning: <script> lacks "type" attribute
+line 404 column 13 - Warning: trimming empty <div>
+line 405 column 5 - Warning: trimming empty <div>
+line 406 column -3 - Warning: trimming empty <div>
+line 413 column 13 - Warning: trimming empty <div>
+line 414 column 5 - Warning: trimming empty <div>
+line 415 column -3 - Warning: trimming empty <div>
+line 424 column 81 - Error: <aside> is not recognized!
+line 424 column 81 - Warning: discarding unexpected <aside>
+line 426 column 81 - Error: <section> is not recognized!
+line 426 column 81 - Warning: discarding unexpected <section>
+line 427 column 13 - Warning: discarding unexpected </section>
+line 427 column 27 - Error: <section> is not recognized!
+line 427 column 27 - Warning: discarding unexpected <section>
+line 428 column 226 - Warning: unknown attribute "aria-required"
+line 428 column 226 - Warning: unknown attribute "placeholder"
+line 429 column 78 - Warning: unknown attribute "aria-required"
+line 429 column 78 - Warning: unknown attribute "placeholder"
+line 430 column 86 - Warning: unknown attribute "aria-required"
+line 430 column 86 - Warning: unknown attribute "placeholder"
+line 431 column 80 - Warning: unknown attribute "aria-required"
+line 431 column 80 - Warning: unknown attribute "placeholder"
+line 432 column 80 - Warning: unknown attribute "aria-required"
+line 432 column 80 - Warning: unknown attribute "placeholder"
+line 433 column 86 - Warning: unknown attribute "aria-required"
+line 433 column 86 - Warning: unknown attribute "placeholder"
+line 435 column -3 - Warning: discarding unexpected </section>
+line 436 column 17 - Error: <section> is not recognized!
+line 436 column 17 - Warning: discarding unexpected <section>
+line 456 column 13 - Warning: discarding unexpected </section>
+line 457 column 29 - Warning: discarding unexpected </aside>
+line 470 column 9 - Warning: unknown attribute "role"
+line 483 column 69 - Warning: trimming empty <div>
+InputStream: Doctype given is ""
+InputStream: Document content looks like HTML 4.01 Transitional
+65 warnings, 6 errors were found!
+This document has errors that must be fixed before
+using HTML Tidy to generate a tidied up version.
