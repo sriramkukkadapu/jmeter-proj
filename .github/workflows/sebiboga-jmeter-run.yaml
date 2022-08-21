@@ -28,6 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: install jmeter
         run: |
+          sudo apt install wget
           java -version
           echo y | wget https://downloads.apache.org/jmeter/binaries/apache-jmeter-5.5.zip || true
           unzip apache-jmeter-5.5.zip
