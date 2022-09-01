@@ -1,14 +1,18 @@
+# This yml will run the JMeter tests using JMeter thats present within this project repo. 
+# Due to memory issues removing the contents of that folder, if we put the jmeter contents in that folder and enable this file it will run as usual.
+
 name: CI
 
 on: 
- schedule:
-   - cron: '0 0 * * *'
+
+# schedule:
+#   - cron: '0 0 * * *'
 
   # Triggers the workflow on push or pull request events but only for the "master" branch
  push:
-  branches: [ "master" ]
+  branches: [ "none" ]
  pull_request:
-  branches: [ "master" ]
+  branches: [ "none" ]
     
 jobs:
   build:
