@@ -133,7 +133,7 @@ $(document).ready(function() {
         widgets: ['zebra']
     });
 
-    var data = {"OkPercent": 100.0, "KoPercent": 0.0};
+    var data = {"OkPercent": 20.0, "KoPercent": 80.0};
     var dataset = [
         {
             "label" : "FAIL",
@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [1.0, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [1.0, 500, 1500, "/authenticate-59"], "isController": false}, {"data": [1.0, 500, 1500, "/authenticate-59-1"], "isController": false}, {"data": [1.0, 500, 1500, "/secure-60"], "isController": false}, {"data": [1.0, 500, 1500, "Debug Sampler"], "isController": false}, {"data": [1.0, 500, 1500, "/authenticate-59-0"], "isController": false}, {"data": [1.0, 500, 1500, "/logout-73-0"], "isController": false}, {"data": [1.0, 500, 1500, "/login-52 - multiple reg ex"], "isController": false}, {"data": [1.0, 500, 1500, "/logout-73"], "isController": false}, {"data": [1.0, 500, 1500, "/logout-73-1"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.2, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.0, 500, 1500, "/authenticate-59"], "isController": false}, {"data": [0.0, 500, 1500, "/secure-60"], "isController": false}, {"data": [1.0, 500, 1500, "Debug Sampler"], "isController": false}, {"data": [0.0, 500, 1500, "/login-52 - multiple reg ex"], "isController": false}, {"data": [0.0, 500, 1500, "/logout-73"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 9, 0, 0.0, 40.222222222222214, 1, 287, 8.0, 287.0, 287.0, 287.0, 21.634615384615383, 63.78408578725962, 25.423490084134617], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["/authenticate-59", 1, 0, 0.0, 18.0, 18, 18, 18.0, 18.0, 18.0, 18.0, 55.55555555555555, 262.9123263888889, 132.64973958333334], "isController": false}, {"data": ["/authenticate-59-1", 1, 0, 0.0, 8.0, 8, 8, 8.0, 8.0, 8.0, 8.0, 125.0, 409.0576171875, 150.7568359375], "isController": false}, {"data": ["/secure-60", 1, 0, 0.0, 8.0, 8, 8, 8.0, 8.0, 8.0, 8.0, 125.0, 316.7724609375, 131.9580078125], "isController": false}, {"data": ["Debug Sampler", 1, 0, 0.0, 1.0, 1, 1, 1.0, 1.0, 1.0, 1.0, 1000.0, 444.3359375, 0.0], "isController": false}, {"data": ["/authenticate-59-0", 1, 0, 0.0, 9.0, 9, 9, 9.0, 9.0, 9.0, 9.0, 111.1111111111111, 162.21788194444446, 131.2934027777778], "isController": false}, {"data": ["/logout-73-0", 1, 0, 0.0, 7.0, 7, 7, 7.0, 7.0, 7.0, 7.0, 142.85714285714286, 203.96205357142856, 150.94866071428572], "isController": false}, {"data": ["/login-52 - multiple reg ex", 1, 0, 0.0, 287.0, 287, 287, 287.0, 287.0, 287.0, 287.0, 3.484320557491289, 12.63406467770035, 1.5890407229965158], "isController": false}, {"data": ["/logout-73", 1, 0, 0.0, 16.0, 16, 16, 16.0, 16.0, 16.0, 16.0, 62.5, 327.0263671875, 134.033203125], "isController": false}, {"data": ["/logout-73-1", 1, 0, 0.0, 8.0, 8, 8, 8.0, 8.0, 8.0, 8.0, 125.0, 475.5859375, 135.986328125], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 5, 4, 80.0, 207.0, 0, 913, 4.0, 913.0, 913.0, 913.0, 4.578754578754579, 6.1705872252747245, 0.8880279876373626], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["/authenticate-59", 1, 1, 100.0, 4.0, 4, 4, 4.0, 4.0, 4.0, 4.0, 250.0, 508.544921875, 0.0], "isController": false}, {"data": ["/secure-60", 1, 1, 100.0, 117.0, 117, 117, 117.0, 117.0, 117.0, 117.0, 8.547008547008549, 10.1829594017094, 4.390357905982905], "isController": false}, {"data": ["Debug Sampler", 1, 0, 0.0, 1.0, 1, 1, 1.0, 1.0, 1.0, 1.0, 1000.0, 287.109375, 0.0], "isController": false}, {"data": ["/login-52 - multiple reg ex", 1, 1, 100.0, 913.0, 913, 913, 913.0, 913.0, 913.0, 913.0, 1.095290251916758, 1.3049356516976998, 0.4995122535596933], "isController": false}, {"data": ["/logout-73", 1, 1, 100.0, 0.0, 0, 0, 0.0, 0.0, 0.0, 0.0, Infinity, Infinity, NaN], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
@@ -217,7 +217,7 @@ $(document).ready(function() {
     }, [[0, 0]], 0, summaryTableHeader);
 
     // Create error table
-    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": []}, function(index, item){
+    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": [{"data": ["503/Service Unavailable", 2, 50.0, 40.0], "isController": false}, {"data": ["Non HTTP response code: org.apache.http.NoHttpResponseException/Non HTTP response message: the-internet.herokuapp.com:443 failed to respond", 2, 50.0, 40.0], "isController": false}]}, function(index, item){
         switch(index){
             case 2:
             case 3:
@@ -228,7 +228,7 @@ $(document).ready(function() {
     }, [[1, 1]]);
 
         // Create top5 errors by sampler
-    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 9, 0, null, null, null, null, null, null, null, null, null, null], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
+    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 5, 4, "503/Service Unavailable", 2, "Non HTTP response code: org.apache.http.NoHttpResponseException/Non HTTP response message: the-internet.herokuapp.com:443 failed to respond", 2, null, null, null, null, null, null], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": ["/authenticate-59", 1, 1, "Non HTTP response code: org.apache.http.NoHttpResponseException/Non HTTP response message: the-internet.herokuapp.com:443 failed to respond", 1, null, null, null, null, null, null, null, null], "isController": false}, {"data": ["/secure-60", 1, 1, "503/Service Unavailable", 1, null, null, null, null, null, null, null, null], "isController": false}, {"data": [], "isController": false}, {"data": ["/login-52 - multiple reg ex", 1, 1, "503/Service Unavailable", 1, null, null, null, null, null, null, null, null], "isController": false}, {"data": ["/logout-73", 1, 1, "Non HTTP response code: org.apache.http.NoHttpResponseException/Non HTTP response message: the-internet.herokuapp.com:443 failed to respond", 1, null, null, null, null, null, null, null, null], "isController": false}]}, function(index, item){
         return item;
     }, [[0, 0]], 0);
 
